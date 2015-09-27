@@ -2,9 +2,7 @@ Package.describe({
   name: 'constellation:plugins',
   version: '0.1.0',
   summary: 'A list of available Constellation plugins',
-  git: '',
-  // By default, Meteor will default to using README.md for documentation.
-  // To avoid submitting documentation, set this field to null.
+  git: 'https://github.com/JackAdams/constellation-plugins',
   documentation: 'README.md',
   debugOnly: true
 });
@@ -21,6 +19,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('constellation-plugins');
+  api.use('constellation:plugins');
   api.addFiles('constellation-plugins-tests.js');
 });
