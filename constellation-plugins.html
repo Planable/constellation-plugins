@@ -1,0 +1,40 @@
+<template name="Constellation_plugins_menu">
+  
+  {{#each actions}}
+    {{#if packageCount}}
+      <span class="Constellation_plugins_add_remove Constellation_edit_cancel" style="{{#if Constellation_plugins_active}}background-color:#999;cursor:not-allowed;{{/if}}">
+        {{this}} ({{packageCount}})
+      </span>
+    {{/if}}
+  {{/each}}
+
+</template>
+
+<template name="Constellation_plugins_main">
+
+  <div class="Constellation_plugins_container">
+    {{#if Constellation_plugins_active}}
+      Updating Constellation plugins.<br />
+      App will refresh soon ...
+    {{else}}
+      {{#each constellationPlugins}}
+        <div class="Constellation_plugin {{#if present}}Constellation_plugin_present{{/if}}">
+          {{#with pinned}}
+            <span class="Constellation_plugin_state Constellation_plugin_pinned" title="This is a dependency of '{{this}}', so it can't be removed.">&nbsp;</span>
+          {{else}}
+            <span class="Constellation_plugin_state {{selected}}">
+              {{#if present}}
+                {{#if selected}}X{{else}}✓{{/if}}
+              {{else}}
+                {{#if selected}}✓{{else}}&nbsp;{{/if}}
+              {{/if}}
+            </span>
+          {{/with}}
+          {{name}}
+          <div class="Constellation_plugin_description">{{description}}</div>
+        </div>
+      {{/each}}
+    {{/if}}
+  </div>
+
+</template>
