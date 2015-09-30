@@ -31,5 +31,12 @@
 }
 
 .Constellation_plugin_pinned {
-  background-color: #999;	
+  background-color: #999;
+  color: #ccc;
+}
+
+.Constellation_plugins_message {
+  font-size: xx-small;
+  margin: 0 8px;
+  line-height: 14px;	
 }

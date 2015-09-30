@@ -20,7 +20,7 @@ var pluginPresent = function (name) {
 
 var pluginPinned = function (name) {
   return _.reduce(constellationPluginUmbrellas, function (memo, dependencies, umbrellaPackage) {
-	if (Package[umbrellaPackage] !== undefined && _.contains(dependencies, name) && !_.contains(PluginsDict.get('Constellation_plugins_remove'), umbrellaPackage)) {
+	if (Package[umbrellaPackage] !== undefined && _.contains(dependencies, name)) { // && !_.contains(PluginsDict.get('Constellation_plugins_remove'), umbrellaPackage)
 	  memo = umbrellaPackage;
 	}
 	return memo;
@@ -37,6 +37,9 @@ Template.Constellation_plugins_menu.helpers({
   },
   packageCount: function () {
 	return PluginsDict.get('Constellation_plugins_' + String(this)).length;  
+  },
+  queued: function () {
+	return   PluginsDict.get('Constellation_plugins_add').length + PluginsDict.get('Constellation_plugins_remove').length;
   }
 });
 

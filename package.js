@@ -1,7 +1,7 @@
 Package.describe({
   name: 'constellation:plugins',
-  version: '0.1.0',
-  summary: 'A list of available Constellation plugins',
+  version: '0.1.1',
+  summary: 'A self-service menu of Constellation plugins',
   git: 'https://github.com/JackAdams/constellation-plugins',
   documentation: 'README.md',
   debugOnly: true
