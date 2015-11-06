@@ -101,6 +101,10 @@ var constellationPlugins = [
     name: "babrahams:constellation"
   },
   {
+	description: "Dump and restore collections",
+	name: "constellation:dump-restore"  
+  },
+  {
     description: "Generate Simple Schema using existing collection data",
     name: "constellation:schema"
   },
