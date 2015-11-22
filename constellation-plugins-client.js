@@ -155,6 +155,10 @@ var constellationPlugins = [
   {
     description: "JS performance monitoring with stats.js",
     name: "fermuch:stats.js"
+  },
+  {
+    description: "Detect out of date packages in your app",
+    name: "fourquet:anti-gravity"
   }
 ];
 
