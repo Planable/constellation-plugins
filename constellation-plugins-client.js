@@ -5,7 +5,8 @@ var Constellation = Package["constellation:console"].API;
 Constellation.addTab({
   name: 'Plugins',
   menuContentTemplate: 'Constellation_plugins_menu',
-  mainContentTemplate: 'Constellation_plugins_main'
+  mainContentTemplate: 'Constellation_plugins_main',
+  guideContentTemplate: 'Constellation_plugins_guide'
 });
 
 var PluginsDict = new ReactiveDict('Constellation_plugins');
