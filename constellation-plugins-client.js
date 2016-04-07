@@ -138,6 +138,10 @@ var constellationPlugins = [
     name: "constellation:session"
   },
   {
+    description: "Monitor and toggle connection status",
+    name: "constellation:connection"
+  },
+  {
     description: "See the DDP traffic that is flowing between client and server",
     name: "lai:ddp-inspector"
   },
