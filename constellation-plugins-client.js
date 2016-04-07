@@ -118,6 +118,10 @@ var constellationPlugins = [
     name: "constellation:shorten-collection-names"
   },
   {
+    description: "Monitor and toggle connection status",
+    name: "constellation:connection"
+  },
+  {
     description: "Minify the console some more",
     name: "constellation:tiny"
   },
@@ -136,10 +140,6 @@ var constellationPlugins = [
   {
     description: "Edit Session variables and other reactive dictionaries",
     name: "constellation:session"
-  },
-  {
-    description: "Monitor and toggle connection status",
-    name: "constellation:connection"
   },
   {
     description: "See the DDP traffic that is flowing between client and server",
