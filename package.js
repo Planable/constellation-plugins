@@ -1,6 +1,6 @@
 Package.describe({
   name: 'constellation:plugins',
-  version: '0.4.5',
+  version: '0.4.6',
   summary: 'A self-service menu of Constellation plugins',
   git: 'https://github.com/JackAdams/constellation-plugins',
   documentation: 'README.md',
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.use(['check', 'underscore']);
   api.use(['templating', 'reactive-dict'], 'client');
   // api.use('ddp', 'server');
-  api.use('constellation:console@1.4.3');
+  api.use('constellation:console@1.4.4');
   api.addFiles(['constellation-plugins.css', 'constellation-plugins.html', 'constellation-plugins-client.js'], 'client');
   api.addFiles(['constellation-plugins-server.js'], 'server');
   
