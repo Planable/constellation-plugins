@@ -168,5 +168,5 @@ var constellationPlugins = [
 ];
 
 var constellationPluginUmbrellas = {
-  'babrahams:constellation' : ['constellation:console','babrahams:temple','constellation:subscriptions','constellation:session','constellation:autopublish','constellation:tiny','constellation:position','lai:ddp-inspector']
+  'babrahams:constellation' : ['constellation:console','babrahams:temple','constellation:subscriptions','constellation:session','constellation:autopublish','constellation:tiny','constellation:position','constellation:plugins']
 };
